@@ -1,0 +1,130 @@
+/* Custom CSS */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav .logo h1 {
+    font-weight: 700;
+    font-size: 28px;
+    color: #222;
+}
+
+.nav .logo b {
+    color: rgb(234, 189, 173);
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin-right: 30px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 17px;
+    transition: color 0.3s ease-in-out;
+    padding: 8px 12px;
+}
+
+.nav ul li a:hover,
+.nav ul .active {
+    color: rgb(239, 195, 179);
+    font-weight: 600;
+}
+
+.nav .signin, .nav .signup {
+    font-size: 16px;
+    padding: 8px 16px;
+    margin-left: 20px;
+}
+
+.nav .signin {
+    background-color: #d9e6f5;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.nav .signup {
+    background-color: #fcdade;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.nav .signin:hover {
+    background-color: #96c4f6;
+}
+
+.nav .signup:hover {
+    background-color: #fdb2c6;
+}
+
+/* Product Cards */
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Button */
+.btn-warning {
+    background-color: #f4636d;
+    border-color: #f569a8;
+}
+
+.btn-warning:hover {
+    background-color: #f21365;
+    border-color: #fa0f90;
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 1.5rem;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
